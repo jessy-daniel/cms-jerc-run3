@@ -10,69 +10,166 @@ sys.path.insert(0, os.getcwd().replace("condor",""))
 from Inputs import *
 from createSkimJobFiles import createJobs
 
+from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout, ProcessPoolExecutor, TimeoutError
+#-------------------------------------------------
+# Configuration for timeout
+#-------------------------------------------------
+# how long (in seconds) to wait for any TFile.Open before giving up
+OPEN_TIMEOUT = 10
+
+#-------------------------------------------------
+# Helper: open ROOT file with a hard timeout using threads
+#-------------------------------------------------
+def open_with_timeout(path, mode="READ"):
+    """
+    Try to open the ROOT file in a background thread.
+    If it takes longer than OPEN_TIMEOUT seconds, return None.
+    """
+    from ROOT import TFile
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        future = executor.submit(TFile.Open, path, mode)
+        try:
+            return future.result(timeout=OPEN_TIMEOUT)
+        except FutureTimeout:
+            print(f"[Timeout on open] {path}")
+            return None
+
 #-------------------------------------------------
 # Function to check a single ROOT file
 #-------------------------------------------------
 def check_file(args):
+    """
+    Checks a single ROOT file (skim) for corruption, with hard timeouts.
+    Returns tuple: (sKey, skim, is_corrupted)
+    """
+    from ROOT import TFile
     sKey, skim = args
     f = None
     try:
-        # Open the file in a way that ensures it's closed later
-        f = TFile.Open(skim, "READ")
-        
-        # Quick exit if file is inaccessible or corrupted
-        if not f or f.IsZombie() or f.GetSize() < 3000:
-            print(f"Corrupted or empty file: {skim}")
+        # Step 1: Quick connectivity check
+        f_test = open_with_timeout(skim, "READ")
+        if f_test is None:
+            print(f"[Timeout on raw-open] {skim}")
             return (sKey, skim, True)
-        
-        # Check for the specific histogram and its validity
-        h = f.Get("Cutflow/h1EventInCutflow")
-        if not h:
-            print(f"'Cutflow/h1EventInCutflow' not found in: {skim}")
+        if not f_test or f_test.IsZombie():
+            print(f"[Raw connectivity failure] {skim}")
+            return (sKey, skim, True)
+        if f_test.GetSize() < 3000:
+            print(f"[Raw file too small] {skim}")
+            f_test.Close()
+            return (sKey, skim, True)
+        f_test.Close()
+
+        # Step 2: Full open & content checks
+        f = open_with_timeout(skim, "READ")
+        if f is None:
+            print(f"[Timeout on full-open] {skim}")
+            return (sKey, skim, True)
+        if not f or f.IsZombie() or f.GetSize() < 3000:
+            print(f"[Corrupt/Empty] {skim}")
             return (sKey, skim, True)
 
-        # Check for the specific TTree and its validity
+        # Check for the histogram
+        h = f.Get("h1EventInCutflow")
+        if not h:
+            print(f"[Missing Cutflow] {skim}")
+            return (sKey, skim, True)
+
+        # Check Events TTree
         tree = f.Get("Events")
         if not tree:
-            print(f"'Events' TTree not found in: {skim}")
+            print(f"[Missing Events TTree] {skim}")
             return (sKey, skim, True)
 
-        # All checks passed, file is considered good
+        # Check Runs TTree
+        tree = f.Get("Runs")
+        if not tree:
+            print(f"[Missing Runs TTree] {skim}")
+            return (sKey, skim, True)
+
+        # All checks passed
         return (sKey, skim, False)
-        
+
     except Exception as e:
-        print(f"Exception while opening {skim}: {e}")
+        print(f"[Exception] while opening {skim}: {e}")
         return (sKey, skim, True)
-    
+
     finally:
-        if f:  # Ensure file is closed even if an error occurred
+        if f:
             f.Close()
 
 #-------------------------------------------------
-# Open each finished file and see if they are OK
+# Check each file in the new-style JSON
+#-------------------------------------------------
+from concurrent.futures import ProcessPoolExecutor, TimeoutError
+from tqdm import tqdm
+
+#-------------------------------------------------
+# Check each file in flat-style JSON
 #-------------------------------------------------
 def check_jobs(jsonFile):
+    """
+    Expects JSON of the form:
+    {
+        "SampleName": [
+            "file1.root", "file2.root", ...
+        ],
+        ...
+    }
+    """
+    print("Checking for corrupted files using ProcessPoolExecutor with per-file timeouts...")
     unfinished = {}
-    print("Checking for corrupted files using multiprocessing...")
 
-    # Prepare a list of (sKey, skim) pairs
+    # Build list of (sample, file) pairs
     file_list = []
-    for sKey, skims in jsonFile.items():
-        for skim in skims:
-            file_list.append((sKey, skim))
+    for sKey, files in jsonFile.items():
+        if isinstance(files, list) and all(isinstance(f, str) for f in files):
+            for skim in files:
+                file_list.append((sKey, skim))
+        else:
+            print(f"WARNING: '{sKey}' does not conform to flat JSON structure. Skipping.")
 
-    # Use multiprocessing to check files in parallel
-    with multiprocessing.Pool() as pool:
-        results = pool.map(check_file, file_list)
+    if not file_list:
+        print("No valid files found in the JSON!")
+        return unfinished
 
-    # Process the results
+    # Parallel check with per-file timeout
+    pool_size = min(20, len(file_list))
+    results = []
+    max_task_time = OPEN_TIMEOUT * 2  # allow time for raw + full open
+
+    executor = ProcessPoolExecutor(max_workers=pool_size)
+    futures = [executor.submit(check_file, arg) for arg in file_list]
+
+    for future, (sKey, skim) in tqdm(zip(futures, file_list), total=len(futures), desc="Checking files"):
+        try:
+            res = future.result(timeout=max_task_time)
+        except TimeoutError:
+            print(f"[Overall timeout] {skim}")
+            res = (sKey, skim, True)
+        results.append(res)
+
+    # Kill leftover workers
+    for p in getattr(executor, '_processes', {}).values():
+        try:
+            p.terminate()
+        except Exception:
+            pass
+    executor.shutdown(wait=False)
+
+    # Build unfinished dict (just corrupted files per sample)
+    corrupted_map = {}
     for sKey, skim, is_corrupted in results:
         if is_corrupted:
-            if sKey not in unfinished:
-                unfinished[sKey] = []
-            unfinished[sKey].append(skim)
+            corrupted_map.setdefault(sKey, []).append(skim)
+
+    for sKey, bad_files in corrupted_map.items():
+        unfinished[sKey] = bad_files
 
     return unfinished
+
+
 
 #-------------------------------------------------
 # Main execution block
