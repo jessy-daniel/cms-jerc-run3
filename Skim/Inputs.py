@@ -1,7 +1,7 @@
 # Skim/Inputs.py
 
 # Directory where skimmed files will be stored
-outSkimDir = "root://hip-cms-se.csc.fi/store/user/rverma/cms-jerc-run3/Skim" 
+outSkimDir = "/eos/user/j/jessy/CMS/UparTReg/Residuals/Skimmed_files_datasets" 
 
 # Years and Channels to process
 Year2022 = {
@@ -28,7 +28,7 @@ Year2024 = {
         #"TTtoLNu2Q"
     ],
     "MCSummer24": [
-        "GJets", "GJetsSherpa", "QCD"
+        "GJets", "QCD"
     ],
     "Data": [
         #"2024FCCv2DIv3", 
@@ -68,7 +68,7 @@ Channels = [
 ]
 
 # VOMS Proxy path (adjust as needed)
-vomsProxy = "x509up_u93032"
+vomsProxy = "/tmp/x509up_u140910"
 
 # Events per job
 eventsPerJobMC = 2e6  # Number of events per job for MC
