@@ -291,7 +291,7 @@ void NanoTree::loadTree() {
     fChain->SetBranchStatus("nJet",1);
 
     //common branches
-	fChain->SetBranchStatus("PV_z",1);
+	fChain->SetBranchStatus("PV_z");
     fChain->SetBranchStatus("PV_npvs",1);
     fChain->SetBranchStatus("PV_npvsGood",1);
     fChain->SetBranchStatus("PFMET_pt",1);
@@ -369,10 +369,10 @@ void NanoTree::loadTree() {
  
     if (globalFlags_.isMC) {
         fChain->SetBranchStatus("Jet_genJetIdx",1);
-		fChain->SetBranchStatus("genWeight",1);
-		fChain->SetBranchStatus("nPSWeight",1);
-		fChain->SetBranchStatus("PSWeight",1);
-		fChain->SetBranchStatus("LHE_HT",1);
+		fChain->SetBranchStatus("genWeight");
+		fChain->SetBranchStatus("nPSWeight");
+		fChain->SetBranchStatus("PSWeight");
+		fChain->SetBranchStatus("LHE_HT");
 	    fChain->SetBranchStatus("Pileup_*",1);
         fChain->SetBranchStatus("GenJet_*",1);
 	    fChain->SetBranchStatus("GenVtx_z");
