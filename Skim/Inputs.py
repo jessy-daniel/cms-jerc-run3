@@ -1,7 +1,7 @@
 # Skim/Inputs.py
 
 # Directory where skimmed files will be stored
-outSkimDir = "/eos/user/j/jessy/CMS/UparTReg/Residuals/Skimmed_files_datasets" 
+outSkimDir = "/eos/cms/store/group/phys_b2g/HHbbgg/jdaniel/JME/Skimmed_files_datasets" 
 
 # Years and Channels to process
 Year2022 = {
@@ -23,10 +23,10 @@ Year2023 = {
 }
 
 Year2024 = {
-    "MC": [
+    #"MC": [
         #"GJets", "QCD"
         #"TTtoLNu2Q"
-    ],
+    #],
     "MCSummer24": [
         "GJets", "QCD"
     ],
@@ -68,7 +68,7 @@ Channels = [
 ]
 
 # VOMS Proxy path (adjust as needed)
-vomsProxy = "/tmp/x509up_u140910"
+vomsProxy = "x509up_u140910"
 
 # Events per job
 eventsPerJobMC = 2e6  # Number of events per job for MC
