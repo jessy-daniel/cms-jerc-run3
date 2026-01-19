@@ -308,64 +308,6 @@ void NanoTree::loadTree() {
 
 	fChain->SetBranchStatus("Rho_fixed*", 1);
 
-    //Photons
-    fChain->SetBranchStatus("nPhoton",1);
-    fChain->SetBranchStatus("Photon_energyErr",1);
-    fChain->SetBranchStatus("Photon_eta",1);
-    fChain->SetBranchStatus("Photon_hoe",1);
-    fChain->SetBranchStatus("Photon_phi",1);
-    fChain->SetBranchStatus("Photon_pt",1);
-    fChain->SetBranchStatus("Photon_r9",1);
-    fChain->SetBranchStatus("Photon_cutBased",1);
-    fChain->SetBranchStatus("Photon_jetIdx",1);
-    fChain->SetBranchStatus("Photon_seedGain",1);
-
-    // Additional flags branches
-    fChain->SetBranchStatus("Flag_HBHENoiseFilter",1);
-    fChain->SetBranchStatus("Flag_HBHENoiseIsoFilter",1);
-    fChain->SetBranchStatus("Flag_CSCTightHaloFilter",1);
-    fChain->SetBranchStatus("Flag_CSCTightHaloTrkMuUnvetoFilter",1);
-    fChain->SetBranchStatus("Flag_CSCTightHalo2015Filter",1);
-    fChain->SetBranchStatus("Flag_globalTightHalo2016Filter",1);
-    fChain->SetBranchStatus("Flag_HcalStripHaloFilter",1);
-    fChain->SetBranchStatus("Flag_hcalLaserEventFilter",1);
-    fChain->SetBranchStatus("Flag_EcalDeadCellBoundaryEnergyFilter",1);
-    fChain->SetBranchStatus("Flag_ecalLaserCorrFilter",1);
-    fChain->SetBranchStatus("Flag_trkPOGFilters",1);
-    fChain->SetBranchStatus("Flag_chargedHadronTrackResolutionFilter",1);
-    fChain->SetBranchStatus("Flag_muonBadTrackFilter",1);
-    fChain->SetBranchStatus("Flag_BadChargedCandidateFilter",1);
-    fChain->SetBranchStatus("Flag_BadChargedCandidateSummer16Filter",1);
-    fChain->SetBranchStatus("Flag_BadPFMuonSummer16Filter",1);
-    fChain->SetBranchStatus("Flag_trkPOG_manystripclus53X",1);
-    fChain->SetBranchStatus("Flag_trkPOG_toomanystripclus53X",1);
-    fChain->SetBranchStatus("Flag_trkPOG_logErrorTooManyClusters",1);
-    fChain->SetBranchStatus("Flag_METFilters",1);
-
-    // Additional HLT branches
-    fChain->SetBranchStatus("HLT_Photon300_NoHE",1);
-    fChain->SetBranchStatus("HLT_Photon33",1);
-    fChain->SetBranchStatus("HLT_Photon50",1);
-    fChain->SetBranchStatus("HLT_Photon75",1);
-    fChain->SetBranchStatus("HLT_Photon90",1);
-    fChain->SetBranchStatus("HLT_Photon120",1);
-    fChain->SetBranchStatus("HLT_Photon150",1);
-    fChain->SetBranchStatus("HLT_Photon175",1);
-    fChain->SetBranchStatus("HLT_Photon200",1);
-    fChain->SetBranchStatus("HLT_Photon50_R9Id90_HE10_IsoM",1);
-    fChain->SetBranchStatus("HLT_Photon75_R9Id90_HE10_IsoM",1);
-    fChain->SetBranchStatus("HLT_Photon90_R9Id90_HE10_IsoM",1);
-    fChain->SetBranchStatus("HLT_Photon120_R9Id90_HE10_IsoM",1);
-    fChain->SetBranchStatus("HLT_Photon165_R9Id90_HE10_IsoM",1);
-    fChain->SetBranchStatus("HLT_Photon20_HoverELoose",1);
-    fChain->SetBranchStatus("HLT_Photon30_HoverELoose",1);
-    fChain->SetBranchStatus("HLT_Photon30EB_TightID_TightIso",1);
-    fChain->SetBranchStatus("HLT_Photon100EBHE10",1);
-    fChain->SetBranchStatus("HLT_Photon110EB_TightID_TightIso",1);
-    fChain->SetBranchStatus("HLT_Photon50EB_TightID_TightIso",1);
-    fChain->SetBranchStatus("HLT_Photon55EB_TightID_TightIso",1);
-    fChain->SetBranchStatus("HLT_Photon75EB_TightID_TightIso",1);
-    fChain->SetBranchStatus("HLT_Photon90EB_TightID_TightIso",1);
  
     if (globalFlags_.isMC) {
         fChain->SetBranchStatus("Jet_genJetIdx",1);
@@ -387,12 +329,7 @@ void NanoTree::loadTree() {
         fChain->SetBranchStatus("PSWeight",1);
         fChain->SetBranchStatus("nPSWeight",1);
         fChain->SetBranchStatus("genWeight",1);
-
-        fChain->SetBranchStatus("nGenIsolatedPhoton",1);
-        fChain->SetBranchStatus("GenIsolatedPhoton_eta",1);
-        fChain->SetBranchStatus("GenIsolatedPhoton_mass",1);
-        fChain->SetBranchStatus("GenIsolatedPhoton_phi",1);
-        fChain->SetBranchStatus("GenIsolatedPhoton_pt",1);
+        
 		/*
         fChain->SetBranchStatus("GenPart_*",1);
         fChain->SetBranchStatus("nGenPart",1);

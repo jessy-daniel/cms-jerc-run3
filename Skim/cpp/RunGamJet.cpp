@@ -33,6 +33,28 @@ auto RunGamJet::Run(std::shared_ptr<NanoTree>& nanoT, TFile *fout) -> int{
       nanoT->fChain->SetBranchStatus("nGenIsolatedPhoton",true);
     }
 
+    // Additional flags branches
+    nanoT->fChain->SetBranchStatus("Flag_HBHENoiseFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_HBHENoiseIsoFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_CSCTightHaloFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_CSCTightHaloTrkMuUnvetoFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_CSCTightHalo2015Filter",1);
+    nanoT->fChain->SetBranchStatus("Flag_globalTightHalo2016Filter",1);
+    nanoT->fChain->SetBranchStatus("Flag_HcalStripHaloFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_hcalLaserEventFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_EcalDeadCellBoundaryEnergyFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_ecalLaserCorrFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_trkPOGFilters",1);
+    nanoT->fChain->SetBranchStatus("Flag_chargedHadronTrackResolutionFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_muonBadTrackFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_BadChargedCandidateFilter",1);
+    nanoT->fChain->SetBranchStatus("Flag_BadChargedCandidateSummer16Filter",1);
+    nanoT->fChain->SetBranchStatus("Flag_BadPFMuonSummer16Filter",1);
+    nanoT->fChain->SetBranchStatus("Flag_trkPOG_manystripclus53X",1);
+    nanoT->fChain->SetBranchStatus("Flag_trkPOG_toomanystripclus53X",1);
+    nanoT->fChain->SetBranchStatus("Flag_trkPOG_logErrorTooManyClusters",1);
+    nanoT->fChain->SetBranchStatus("Flag_METFilters",1);
+    
 	//----------------------------------
 	// Set trigger list
 	//----------------------------------
