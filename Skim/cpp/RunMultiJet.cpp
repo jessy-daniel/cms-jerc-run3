@@ -11,6 +11,9 @@ RunMultiJet::RunMultiJet(GlobalFlag& globalFlags)
 auto RunMultiJet::Run(std::shared_ptr<NanoTree>& nanoT, TFile *fout) -> int{
     fout->cd();
 
+    // Add some channel specific branches
+    nanoT->fChain->SetBranchStatus("HLT_ZeroBias",1);
+
 	//----------------------------------
 	// Set trigger list
 	//----------------------------------
@@ -64,17 +67,31 @@ auto RunMultiJet::Run(std::shared_ptr<NanoTree>& nanoT, TFile *fout) -> int{
 		}
     }
 
-    TTree* newTreeRuns = nanoT->fChainRuns->GetTree()->CloneTree(0);
-    newTreeRuns->SetDirectory(fout);
-    Long64_t nentriesRuns = nanoT->getEntriesRuns();
-    for (Long64_t i = 0; i < nentriesRuns; i++) {
-       Long64_t entry = nanoT->loadEntryRuns(i);
-       nanoT->fChainRuns->GetTree()->GetEntry(entry);
-       newTreeRuns->Fill();      
+    TTree* newTreeRuns = nullptr;
+
+    if (nanoT->fChainRuns && nanoT->fChainRuns->GetTree()) {
+        newTreeRuns = nanoT->fChainRuns->GetTree()->CloneTree(0);
+        newTreeRuns->SetDirectory(fout);
+
+        Long64_t nentriesRuns = nanoT->getEntriesRuns();
+        for (Long64_t i = 0; i < nentriesRuns; i++) {
+            Long64_t entry = nanoT->loadEntryRuns(i);
+            nanoT->fChainRuns->GetTree()->GetEntry(entry);
+            newTreeRuns->Fill();
+        }
+    } 
+    else {
+        std::cout << "[INFO] No Runs tree found — skipping Runs cloning." << std::endl;
     }
+
     Helper::printCutflow(h1EventInCutflow->getHistogram());
     std::cout<<"nEvents_Skim = "<<newTree->GetEntries()<<'\n';
-    std::cout<<"nRuns_Skim = "<<newTreeRuns->GetEntries()<<'\n';
+    if (newTreeRuns) {
+        std::cout << "nRuns_Skim = " << newTreeRuns->GetEntries() << '\n';
+    } 
+    else {
+        std::cout << "nRuns_Skim = 0 (Runs tree missing)" << '\n';
+    }
     std::cout << "Output file path = "<<fout->GetName()<<'\n';
     fout->Write();
 

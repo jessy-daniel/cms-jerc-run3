@@ -1,0 +1,99 @@
+{
+    "2024": {
+        "MCSummer24": {
+            "QCD": {
+                "MCSummer24_2024_MultiJet_QCD4JetsHT1000to1200": "/QCD-4Jets_Bin-HT-1000to1200_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT100to200": "/QCD-4Jets_Bin-HT-100to200_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT1200to1500": "/QCD-4Jets_Bin-HT-1200to1500_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT1500to2000": "/QCD-4Jets_Bin-HT-1500to2000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT2000toInf": "/QCD-4Jets_Bin-HT-2000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT200to400": "/QCD-4Jets_Bin-HT-200to400_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT400to600": "/QCD-4Jets_Bin-HT-400to600_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT40to70": "/QCD-4Jets_Bin-HT-40to70_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT600to800": "/QCD-4Jets_Bin-HT-600to800_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT70to100": "/QCD-4Jets_Bin-HT-70to100_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT800to1000": "/QCD-4Jets_Bin-HT-800to1000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM"
+            }
+        },
+        "Data": {
+            "2024C": {
+                "Data_2024C_MultiJet_JetMET0": "/JetMET0/Run2024C-PromptReco-v1/NANOAOD",
+                "Data_2024C_MultiJet_JetMET1": "/JetMET1/Run2024C-PromptReco-v1/NANOAOD"
+            },
+            "2024D": {
+                "Data_2024D_MultiJet_JetMET0": "/JetMET0/Run2024D-PromptReco-v1/NANOAOD",
+                "Data_2024D_MultiJet_JetMET1": "/JetMET1/Run2024D-PromptReco-v1/NANOAOD"
+            },
+            "2024E": {
+                "Data_2024E_MultiJet_JetMET0v1": "/JetMET0/Run2024E-PromptReco-v1/NANOAOD",
+                "Data_2024E_MultiJet_JetMET0v2": "/JetMET0/Run2024E-PromptReco-v2/NANOAOD",
+                "Data_2024E_MultiJet_JetMET1v1": "/JetMET1/Run2024E-PromptReco-v1/NANOAOD",
+                "Data_2024E_MultiJet_JetMET1v2": "/JetMET1/Run2024E-PromptReco-v2/NANOAOD"
+            },
+            "2024F": {
+                "Data_2024F_MultiJet_JetMET0": "/JetMET0/Run2024F-PromptReco-v1/NANOAOD",
+                "Data_2024F_MultiJet_JetMET1": "/JetMET1/Run2024F-PromptReco-v1/NANOAOD"
+            },
+            "2024G": {
+                "Data_2024G_MultiJet_JetMET0": "/JetMET0/Run2024G-PromptReco-v1/NANOAOD",
+                "Data_2024G_MultiJet_JetMET1": "/JetMET1/Run2024G-PromptReco-v1/NANOAOD"
+            },
+            "2024H": {
+                "Data_2024H_MultiJet_JetMET0": "/JetMET0/Run2024H-PromptReco-v1/NANOAOD",
+                "Data_2024H_MultiJet_JetMET1": "/JetMET1/Run2024H-PromptReco-v1/NANOAOD"
+            },
+            "2024I": {
+                "Data_2024I_MultiJet_JetMET0v1": "/JetMET0/Run2024I-PromptReco-v1/NANOAOD",
+                "Data_2024I_MultiJet_JetMET0v2": "/JetMET0/Run2024I-PromptReco-v2/NANOAOD",
+                "Data_2024I_MultiJet_JetMET1v1": "/JetMET1/Run2024I-PromptReco-v1/NANOAOD",
+                "Data_2024I_MultiJet_JetMET1v2": "/JetMET1/Run2024I-PromptReco-v2/NANOAOD"
+            },
+            "2024C_ZB": {
+                "Data_2024C_MultiJet_ZeroBias": "/ZeroBias/Run2024C-PromptReco-v1/NANOAOD"
+            },
+            "2024D_ZB": {
+                "Data_2024D_MultiJet_ZeroBias": "/ZeroBias/Run2024D-PromptReco-v1/NANOAOD"
+            },
+            "2024E_ZB": {
+                "Data_2024E_MultiJet_ZeroBiasv1": "/ZeroBias/Run2024E-PromptReco-v1/NANOAOD",
+                "Data_2024E_MultiJet_ZeroBiasv2": "/ZeroBias/Run2024E-PromptReco-v2/NANOAOD"
+            },
+            "2024F_ZB": {
+                "Data_2024F_MultiJet_ZeroBias": "/ZeroBias/Run2024F-PromptReco-v1/NANOAOD"
+            },
+            "2024G_ZB": {
+                "Data_2024G_MultiJet_ZeroBias": "/ZeroBias/Run2024G-PromptReco-v1/NANOAOD"
+            },
+            "2024H_ZB": {
+                "Data_2024H_MultiJet_ZeroBias": "/ZeroBias/Run2024H-PromptReco-v1/NANOAOD"
+            },
+            "2024I_ZB": {
+                "Data_2024I_MultiJet_ZeroBiasv1": "/ZeroBias/Run2024I-PromptReco-v1/NANOAOD",
+                "Data_2024I_MultiJet_ZeroBiasv2": "/ZeroBias/Run2024I-PromptReco-v2/NANOAOD"
+            }
+        },
+        "DataReprocessing": {
+            "2024C": {
+                "DataReprocessing_2024C_MultiJet_JetMET0": "/JetMET0/Run2024C-2024CDEReprocessing-v1/NANOAOD",
+                "DataReprocessing_2024C_MultiJet_JetMET1v2": "/JetMET1/Run2024C-2024CDEReprocessing-v2/NANOAOD"
+            },
+            "2024D": {
+                "DataReprocessing_2024D_MultiJet_JetMET0": "/JetMET0/Run2024D-2024CDEReprocessing-v1/NANOAOD",
+                "DataReprocessing_2024D_MultiJet_JetMET1": "/JetMET1/Run2024D-2024CDEReprocessing-v1/NANOAOD"
+            },
+            "2024E": {
+                "DataReprocessing_2024E_MultiJet_JetMET0": "/JetMET0/Run2024E-2024CDEReprocessing-v1/NANOAOD", 
+                "DataReprocessing_2024E_MultiJet_JetMET1": "/JetMET1/Run2024E-2024CDEReprocessing-v1/NANOAOD"
+            },
+            "2024C_ZB": {
+                "DataReprocessing_2024C_MultiJet_ZeroBias": "/ZeroBias/Run2024C-2024CDEReprocessing-v1/NANOAOD"
+            },
+            "2024D_ZB": {
+                "DataReprocessing_2024D_MultiJet_ZeroBias": "/ZeroBias/Run2024D-2024CDEReprocessing-v1/NANOAOD"
+            },
+            "2024E_ZB": {
+                "DataReprocessing_2024E_MultiJet_ZeroBias": "/ZeroBias/Run2024E-2024CDEReprocessing-v1/NANOAOD"
+            }
+        }
+    }
+}
