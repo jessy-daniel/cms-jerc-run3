@@ -1,5 +1,11 @@
 #!/bin/bash
 #To be run on remote machine
+# --------------------------------------------------
+# Configuration ccache
+# --------------------------------------------------
+export CCACHE_DIR=$PWD/.ccache
+mkdir -p $CCACHE_DIR
+
 #Take input arguments as an array
 myArray=( "$@" )
 #Array: Size=$#, an element=$1, all element = $@

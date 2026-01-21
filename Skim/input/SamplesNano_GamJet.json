@@ -170,102 +170,80 @@
         },
         "MCSummer24": {
             "GJets": {
-                "MCSummer24_2024_GamJet_GJetsHT40to100PTG10to100": "/GJ-4Jets_Bin-HT-40to100-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT100to200PTG10to100": "/GJ-4Jets_Bin-HT-100to200-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT200to400PTG10to100": "/GJ-4Jets_Bin-HT-200to400-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT400to600PTG10to100": "/GJ-4Jets_Bin-HT-400to600-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v4/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT600to1000PTG10to100": "/GJ-4Jets_Bin-HT-600to1000-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT1000toInfPTG10to100": "/GJ-4Jets_Bin-HT-1000-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT40to100PTG10to100": "/GJ-4Jets_Bin-HT-40to100-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT100to200PTG10to100": "/GJ-4Jets_Bin-HT-100to200-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT200to400PTG10to100": "/GJ-4Jets_Bin-HT-200to400-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT400to600PTG10to100": "/GJ-4Jets_Bin-HT-400to600-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v3/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT600to1000PTG10to100": "/GJ-4Jets_Bin-HT-600to1000-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT1000toInfPTG10to100": "/GJ-4Jets_Bin-HT-1000-PTG-10to100_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
                                                                        
                                                                        
-                "MCSummer24_2024_GamJet_GJetsHT40to200PTG100to200": "/GJ-4Jets_Bin-HT-40to200-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT200to400PTG100to200": "/GJ-4Jets_Bin-HT-200to400-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT400to600PTG100to200": "/GJ-4Jets_Bin-HT-400to600-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT600to1000PTG100to200": "/GJ-4Jets_Bin-HT-600to1000-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT1000toInfPTG100to200": "/GJ-4Jets_Bin-HT-1000-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT40to200PTG100to200": "/GJ-4Jets_Bin-HT-40to200-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT200to400PTG100to200": "/GJ-4Jets_Bin-HT-200to400-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT400to600PTG100to200": "/GJ-4Jets_Bin-HT-400to600-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT600to1000PTG100to200": "/GJ-4Jets_Bin-HT-600to1000-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT1000toInfPTG100to200": "/GJ-4Jets_Bin-HT-1000-PTG-100to200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
                                                                        
-                "MCSummer24_2024_GamJet_GJetsHT40to400PTG200toInf": "/GJ-4Jets_Bin-HT-40to400-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT400to600PTG200toInf": "/GJ-4Jets_Bin-HT-400to600-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT600to1000PTG200toInf": "/GJ-4Jets_Bin-HT-600to1000-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_GJetsHT1000toInfPTG200toInf": "/GJ-4Jets_Bin-HT-1000-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM"
+                "MCSummer24_2024_GamJet_GJetsHT40to400PTG200toInf": "/GJ-4Jets_Bin-HT-40to400-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT400to600PTG200toInf": "/GJ-4Jets_Bin-HT-400to600-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT600to1000PTG200toInf": "/GJ-4Jets_Bin-HT-600to1000-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_GamJet_GJetsHT1000toInfPTG200toInf": "/GJ-4Jets_Bin-HT-1000-PTG-200_Par-dRGJ-0p25_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM"
             },
             "GJetsSherpa": {
                 "MCSummer24_2024_GamJet_GJetsSherpa": "/GJ-4Jets-2NLO2LO_Bin-PTG-25_Par-BiasedPTG_TuneSherpaDef_13p6TeV_sherpaMEPS/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM"
             },
             "QCD": {
-                "MCSummer24_2024_GamJet_QCD4JetsHT1000to1200": "/QCD-4Jets_Bin-HT-1000to1200_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT100to200": "/QCD-4Jets_Bin-HT-100to200_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT1200to1500": "/QCD-4Jets_Bin-HT-1200to1500_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT1500to2000": "/QCD-4Jets_Bin-HT-1500to2000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT2000toInf": "/QCD-4Jets_Bin-HT-2000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT200to400": "/QCD-4Jets_Bin-HT-200to400_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT400to600": "/QCD-4Jets_Bin-HT-400to600_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT40to70": "/QCD-4Jets_Bin-HT-40to70_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT600to800": "/QCD-4Jets_Bin-HT-600to800_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT70to100": "/QCD-4Jets_Bin-HT-70to100_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM",
-                "MCSummer24_2024_GamJet_QCD4JetsHT800to1000": "/QCD-4Jets_Bin-HT-800to1000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAOD-140X_mcRun3_2024_realistic_v26-v2/NANOAODSIM"
+                "MCSummer24_2024_MultiJet_QCD4JetsHT1000to1200": "/QCD-4Jets_Bin-HT-1000to1200_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT100to200": "/QCD-4Jets_Bin-HT-100to200_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT1200to1500": "/QCD-4Jets_Bin-HT-1200to1500_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT1500to2000": "/QCD-4Jets_Bin-HT-1500to2000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT2000toInf": "/QCD-4Jets_Bin-HT-2000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT200to400": "/QCD-4Jets_Bin-HT-200to400_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT400to600": "/QCD-4Jets_Bin-HT-400to600_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT40to70": "/QCD-4Jets_Bin-HT-40to70_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT600to800": "/QCD-4Jets_Bin-HT-600to800_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT70to100": "/QCD-4Jets_Bin-HT-70to100_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM",
+                "MCSummer24_2024_MultiJet_QCD4JetsHT800to1000": "/QCD-4Jets_Bin-HT-800to1000_TuneCP5_13p6TeV_madgraphMLM-pythia8/RunIII2024Summer24NanoAODv15-150X_mcRun3_2024_realistic_v2-v2/NANOAODSIM"
             }
         },
         "Data": {
             "2024A": {
-                "Data_2024A_GamJet_EGamma0": "/EGamma0/Run2024A-PromptReco-v1/NANOAOD",
-                "Data_2024A_GamJet_EGamma1": "/EGamma1/Run2024A-PromptReco-v1/NANOAOD"
+                "Data_2024A_GamJet_EGamma0": "/EGamma0/Run2024A-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024A_GamJet_EGamma1": "/EGamma1/Run2024A-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024B": {
-                "Data_2024B_GamJet_EGamma0": "/EGamma0/Run2024B-PromptReco-v1/NANOAOD",
-                "Data_2024B_GamJet_EGamma1": "/EGamma1/Run2024B-PromptReco-v1/NANOAOD"
+                "Data_2024B_GamJet_EGamma0": "/EGamma0/Run2024B-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024B_GamJet_EGamma1": "/EGamma1/Run2024B-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024C": {
-                "Data_2024C_GamJet_EGamma0": "/EGamma0/Run2024C-PromptReco-v1/NANOAOD",
-                "Data_2024C_GamJet_EGamma1": "/EGamma1/Run2024C-PromptReco-v1/NANOAOD"
+                "Data_2024C_GamJet_EGamma0": "/EGamma0/Run2024C-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024C_GamJet_EGamma1": "/EGamma1/Run2024C-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024D": {
-                "Data_2024D_GamJet_EGamma0": "/EGamma0/Run2024D-PromptReco-v1/NANOAOD",
-                "Data_2024D_GamJet_EGamma1": "/EGamma1/Run2024D-PromptReco-v1/NANOAOD"
+                "Data_2024D_GamJet_EGamma0": "/EGamma0/Run2024D-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024D_GamJet_EGamma1": "/EGamma1/Run2024D-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024E": {
-                "Data_2024E_GamJet_EGamma0v1": "/EGamma0/Run2024E-PromptReco-v1/NANOAOD",
-                "Data_2024E_GamJet_EGamma0v2": "/EGamma0/Run2024E-PromptReco-v2/NANOAOD",
-                "Data_2024E_GamJet_EGamma1v1": "/EGamma1/Run2024E-PromptReco-v1/NANOAOD",
-                "Data_2024E_GamJet_EGamma1v2": "/EGamma1/Run2024E-PromptReco-v2/NANOAOD"
+                "Data_2024E_GamJet_EGamma0": "/EGamma0/Run2024E-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024E_GamJet_EGamma1": "/EGamma1/Run2024E-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024F": {
-                "Data_2024F_GamJet_EGamma0": "/EGamma0/Run2024F-PromptReco-v1/NANOAOD",
-                "Data_2024F_GamJet_EGamma0CCDI": "/EGamma0/Run2024F-ECAL_CC_HCAL_DI-v1/NANOAOD",
-                "Data_2024F_GamJet_EGamma1": "/EGamma1/Run2024F-PromptReco-v1/NANOAOD",
-                "Data_2024F_GamJet_EGamma1CCDI": "/EGamma1/Run2024F-ECAL_CC_HCAL_DI-v2/NANOAOD"
-            },
-            "2024FCCv2DIv3": {
-                "Data_2024F_GamJet_EGamma0CCDIv2": "/EGamma0/Run2024F-ECAL_CC_HCAL_DI-v2/NANOAOD",
-                "Data_2024F_GamJet_EGamma1CCDIv3": "/EGamma1/Run2024F-ECAL_CC_HCAL_DI-v3/NANOAOD"
+                "Data_2024F_GamJet_EGamma0": "/EGamma0/Run2024F-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024F_GamJet_EGamma1": "/EGamma1/Run2024F-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024G": {
-                "Data_2024G_GamJet_EGamma0": "/EGamma0/Run2024G-PromptReco-v1/NANOAOD",
-                "Data_2024G_GamJet_EGamma1": "/EGamma1/Run2024G-PromptReco-v1/NANOAOD"
+                "Data_2024G_GamJet_EGamma0": "/EGamma0/Run2024G-MINIv6NANOv15-v2/NANOAOD",
+                "Data_2024G_GamJet_EGamma1": "/EGamma1/Run2024G-MINIv6NANOv15-v2/NANOAOD"
             },
             "2024H": {
-                "Data_2024H_GamJet_EGamma0": "/EGamma0/Run2024H-PromptReco-v1/NANOAOD",
-                "Data_2024H_GamJet_EGamma1": "/EGamma1/Run2024H-PromptReco-v1/NANOAOD"
+                "Data_2024H_GamJet_EGamma0": "/EGamma0/Run2024H-MINIv6NANOv15-v2/NANOAOD",
+                "Data_2024H_GamJet_EGamma1": "/EGamma1/Run2024H-MINIv6NANOv15-v1/NANOAOD"
             },
             "2024I": {
-                "Data_2024I_GamJet_EGamma0v1": "/EGamma0/Run2024I-PromptReco-v1/NANOAOD",
-                "Data_2024I_GamJet_EGamma0v2": "/EGamma0/Run2024I-PromptReco-v2/NANOAOD",
-                "Data_2024I_GamJet_EGamma1v1": "/EGamma1/Run2024I-PromptReco-v1/NANOAOD",
-                "Data_2024I_GamJet_EGamma1v2": "/EGamma1/Run2024I-PromptReco-v2/NANOAOD"
-            }
-        },
-        "DataReprocessing": {
-            "2024C": {
-                "DataReprocessing_2024C_GamJet_EGamma0": "/EGamma0/Run2024C-2024CDEReprocessing-v1/NANOAOD",
-                "DataReprocessing_2024C_GamJet_EGamma1": "/EGamma1/Run2024C-2024CDEReprocessing-v1/NANOAOD"
-            },
-            "2024D": {
-                "DataReprocessing_2024D_GamJet_EGamma0": "/EGamma0/Run2024D-2024CDEReprocessing-v1/NANOAOD",
-                "DataReprocessing_2024D_GamJet_EGamma1": "/EGamma1/Run2024D-2024CDEReprocessing-v1/NANOAOD"
-            },
-            "2024E": {
-                "DataReprocessing_2024E_GamJet_EGamma0": "/EGamma0/Run2024E-2024CDEReprocessing-v1/NANOAOD", 
-                "DataReprocessing_2024E_GamJet_EGamma1": "/EGamma1/Run2024E-2024CDEReprocessing-v1/NANOAOD"
+                "Data_2024I_GamJet_EGamma0v1": "/EGamma0/Run2024I-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024I_GamJet_EGamma0v2": "/EGamma0/Run2024I-MINIv6NANOv15_v2-v1/NANOAOD",
+                "Data_2024I_GamJet_EGamma1v1": "/EGamma1/Run2024I-MINIv6NANOv15-v1/NANOAOD",
+                "Data_2024I_GamJet_EGamma1v2": "/EGamma1/Run2024I-MINIv6NANOv15_v2-v1/NANOAOD"
             }
         }
     },
