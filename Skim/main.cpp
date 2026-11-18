@@ -100,7 +100,7 @@ int main(int argc, char* argv[]){
     nanoT->loadJobFileNames();
     nanoT->loadTree();
 
-	std::string outDir = "output";
+	  std::string outDir = "output";
     mkdir(outDir.c_str(), S_IRWXU);
     auto fout = std::make_unique<TFile>((outDir + "/" + outName).c_str(), "RECREATE");
 

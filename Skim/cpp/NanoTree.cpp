@@ -217,6 +217,10 @@ void NanoTree::loadTree() {
             continue;
         }
 
+        if (!f->GetListOfKeys()->Contains("Runs")) {
+            std::cerr << "Warning: 'Runs' not found in " << fullPath << " (will skip Runs copy for this file).\n";
+        }
+
         TTree* tree = f->Get<TTree>("Events");
         Long64_t fileEntries = tree->GetEntries();
         if (fileEntries == 0) {
@@ -227,6 +231,18 @@ void NanoTree::loadTree() {
             continue;
         }
 
+        if (globalFlags_.isMultiJet) {
+            std::vector<std::string> reqPatterns = { "HLT_PFJet*", "HLT_DiPFJet*" };
+            std::vector<std::string> matchedTrigs = Helper::GetMatchingBranchNames(tree, reqPatterns);
+            if (matchedTrigs.empty()) {
+                std::cerr << "\nWarning: 'Events' TTree in file " << fullPath
+                          << " lacks MultiJet HLT branches. Skipping file.\n\n";
+                f->Close();
+                failedFiles++;
+                continue;
+            }
+        }
+        
         // Now actually add this file to both chains:
         int added = fChain->Add(fullPath.c_str());
         fChainRuns->Add(fullPath.c_str());
@@ -267,7 +283,7 @@ void NanoTree::loadTree() {
     //--------------------------------------- 
     fChain->SetBranchStatus("Jet_btagDeep*",1);
     fChain->SetBranchStatus("Jet_btagPNetQvG",1);
-    fChain->SetBranchStatus("Jet_btagUParTAK4QvG",1);
+    fChain->SetBranchStatus("Jet_btagUParT*",1);
     fChain->SetBranchStatus("Jet_chEmEF",1);
     fChain->SetBranchStatus("Jet_chHEF" ,1);
     fChain->SetBranchStatus("Jet_eta"   ,1);
@@ -374,6 +390,10 @@ Long64_t NanoTree::loadEntry(Long64_t entry) {
     if (centry < 0) return centry;
     if (fChain->GetTreeNumber() != fCurrent_) {
         fCurrent_ = fChain->GetTreeNumber();
+        const TFile* cur = fChain->GetCurrentFile();
+        const char* name = cur ? cur->GetName() : "<unknown>";
+        std::cout << "[Events] Switched to file #" << fCurrent_
+                  << ": " << name << '\n';
     }
     return centry;
 }

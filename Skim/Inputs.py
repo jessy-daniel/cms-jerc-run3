@@ -1,7 +1,7 @@
 # Skim/Inputs.py
 
 # Directory where skimmed files will be stored
-outSkimDir = "/eos/cms/store/group/phys_b2g/HHbbgg/jdaniel/JME/Skimmed_files_datasets" 
+outSkimDir = "/eos/cms/store/group/phys_jetmet/jdaniel/Skimmed_files_datasets" 
 
 # Years and Channels to process
 Year2022 = {
@@ -9,7 +9,7 @@ Year2022 = {
         "GJets", "QCD"
     ],
     "Data": [
-        #"2022B", "2022C", "2022D", "2022E", "2022F", "2022G"
+        "2022B", "2022C", "2022D", "2022E", "2022F", "2022G"
     ]
 }
 
@@ -45,10 +45,11 @@ Year2024 = {
 
 Year2025 = {
     "MCWinter25": [
-        "GJets", "QCD"
+        #"GJets", 
+        "QCD"
     ],
     "Data": [
-        "2025B", "2025C"
+        "2025C", "2025D", "2025E", "2025F", "2025G",
         #"2025C"
     ],
 }
@@ -56,18 +57,18 @@ Year2025 = {
 Years = {}
 #Years['2022'] = Year2022
 #Years['2023'] = Year2023
-Years['2024'] = Year2024
-#Years['2025'] = Year2025
+#Years['2024'] = Year2024
+Years['2025'] = Year2025
 
 
 Channels = [
     #'ZeeJet',
     #'ZmmJet',
-    'GamJet',
+    #'GamJet',
     #'Wqqm',
     #'Wqqe',
     #'WqqDiLep',
-    #'MultiJet',
+    'MultiJet',
 ]
 
 # VOMS Proxy path (adjust as needed)
@@ -77,4 +78,4 @@ vomsProxy = "x509up_u140910"
 eventsPerJobMC = 2e6  # Number of events per job for MC
 eventsPerJobData = 8e6  # Number of events per job for Data
 
-tmpSubDir = "tmpSub_Gamjet"
+tmpSubDir = "tmpSub"

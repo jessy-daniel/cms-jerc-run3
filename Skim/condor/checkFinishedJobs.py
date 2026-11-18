@@ -84,9 +84,9 @@ def check_file(args):
 
         # Check Runs TTree
         tree = f.Get("Runs")
-        if not tree:
-            print(f"[Missing Runs TTree] {skim}")
-            return (sKey, skim, True)
+        #if not tree:
+            #print(f"WARNING : [Missing Runs TTree] {skim}")
+            #return (sKey, skim, True)
 
         # All checks passed
         return (sKey, skim, False)
